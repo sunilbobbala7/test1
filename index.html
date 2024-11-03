@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            
+            
+            height: 100dvh;
+            overflow-y: auto; 
+            
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #444;
+            text-align: center;
+        }
+
+        .project-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .project-link img {
+            width: 100%;
+            max-height: 100px;
+            object-fit: cover;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .project-link:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Main content area */
+        .content {
+            margin-left: 270px; /* Space for sidebar */
+            padding: 20px;
+            width: calc(100% - 270px);
+        }
+
+        /* Project section styling */
+        .project-section {
+            display: none;
+        }
+
+        /* Show selected project or default to project1 */
+        .project-section:target, #project1:target ~ .project-section:first-child {
+            display: block;
+        }
+
+        .project-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .project-section p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar with project thumbnails -->
+    <div class="sidebar">
+        
+        <a href="#project1" class="project-link">
+            Project 1 - Resume
+            <img src="resumepic.Png" alt="Project 1 Thumbnail">
+            
+        </a>
+        <a href="#project2" class="project-link">
+            <img src="catpic.Png" alt="Project 2 Thumbnail">
+            Project 2 - Photo Cat App
+        </a>
+        <a href="#project3" class="project-link">
+            <img src="formpic.Png" alt="Project 3 Thumbnail">
+            Project 3 - Form
+        </a>
+        <a href="#project4" class="project-link">
+            <img src="tributepic.Png" alt="Project 4 Thumbnail">
+            Project 4 - Additional Project
+        </a>
+    </div>
+
+    <!-- Main content area with project sections -->
+    <div class="content">
+        <!-- Project 1 -->
+        <div id="project1" class="project-section">
+            <h3>Project 1 - Resume</h3>
+            <h1>Sunil Reddy</h1>
+    <p>Fresher, Jntuh</p>
+    <a href="https://www.linkedin.com/in/bobbala-sunil-reddy-664479223/">Linkedin</a>
+    <a href="https://github.com/sunilbobbala7">Github</a>
+    <hr>
+    <h2>Experience</h2>
+    <h3> Technical intern at forg</h3>
+    <p>I work with amazon in transportation team, some more description Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam! Maxime officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae totam id commodi laborum enim, sint ea odit quasi soluta!
+        <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto ut praesentium modi. Incidunt atque voluptatem, dignissimos officiis reprehenderit est!
+    </p>
+    <hr>
+
+    <h3> Technical support at teleperfomance</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cum inventore aliquam, nulla eos dignissimos ipsum voluptas id, dolores suscipit totam nostrum perferendis alias, expedita quaerat distinctio asperiores! Nobis, aliquid.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa ab qui autem nesciunt vel consequatur non totam, temporibus excepturi voluptatem iure impedit ut repellendus earum necessitatibus nemo eligendi, animi debitis reiciendis suscipit. Unde iure obcaecati dolores, numquam quibusdam rerum facilis a quam quos ad ullam consectetur reiciendis deserunt similique.
+    </p>
+    <hr>
+
+    <h2>Skills</h2>
+    <!-- how to comment -->
+    <!-- I want to add skills list -->
+    <ul>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+
+    <hr>
+    <h2>Hobbies</h2>
+    <ol>
+        <li>Working out</li>
+        <li>Reading books</li>
+        <li>cricket</li>
+        <li>dance</li>
+    </ol>
+    <hr>
+    <h2>Projects</h2>
+    <p>Project 1</p>
+    <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi esse laboriosam voluptate reiciendis molestiae, ad minus atque aliquid accusamus. Libero facilis totam voluptatibus iste reiciendis ad atque tempore architecto.</p>
+    <p>Project 2</p>
+    <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dicta rem cumque dolore, harum atque alias ullam voluptates error ut architecto nesciunt hic! Perferendis culpa dolorum repudiandae. Quasi, provident numquam.</p>
+    <hr>
+    <pre class="all">     Contact Details</pre>
+    <pre class="all">     E-mail: hacker88@gmail.com</pre>
+    <pre class="all">     Mobile: 9999991112</pre>
+    </div>
+
+        <!-- Project 2 -->
+        <div id="project2" class="project-section">
+            <h3>Project 2 - Photo Cat App</h3>
+            <h1>Cat Photo App</h1>
+    <h2>Cat Photo</h2>
+    <p>click for more images <a href="hbhbh">cat photos</a></p>
+    <img src="cat1.png" alt="">
+    <h2>Cat lists</h2>
+    <h3>Things cat love</h3>
+    <ol>
+        <li>cat lip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ol>
+    <img src="lasanga.png" alt="">
+    <p>cats love lasagna</p>
+    <h3>Top 3 things cats hate</h3>
+    <ul>
+        <li>flea problem</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ul>
+    <img src="cat2.png" alt="">
+    <p>cats hate other cats</p>
+    <table border="1" style= "border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>cat1</th>
+                <th>cat2</th>
+                <th>cat3</th>
+            </tr>
+        </thead >
+        <tbody>
+            <tr>
+                <td rowspan="2">Cat-row 1 Cat-col 1</td>
+                <td>Cat-row 1 Cat-col 2	</td>
+                <td>Cat-row 1 Cat-col 3</td>
+            </tr>
+            <tr>
+                
+                <td>Cat-row 2 Cat-col 2</td>
+                <td>Cat-row 2 Cat-col 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Cat-row 3 Cat-col 1</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Summary</h2>
+    <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi nulla, illum labore, adipisci dignissimos tempore quidem unde ab porro magnam nostrum maiores! Rem quibusdam magnam cupiditate velit quaerat facere ducimus facilis consequuntur ea, eaque temporibus molestiae nostrum saepe quis ipsum autem voluptatum nam eum dolor? Possimus et cupiditate beatae animi ipsam, distinctio harum fugiat id quibusdam! Deserunt tempora harum earum soluta velit, eius recusandae expedita. Dolore culpa quam veritatis quidem architecto amet error odit omnis quibusdam aliquid quis cumque, suscipit unde expedita, itaque dolorem placeat officiis deleniti reiciendis nam laboriosam, excepturi laborum temporibus. Hic quidem a excepturi nostrum laborum quo eos quia consequuntur sit quasi? Dignissimos unde assumenda necessitatibus corporis, excepturi fugit porro alias nam, ipsam ratione, facere et error eveniet! Quaerat in asperiores quibusdam optio adipisci earum vel impedit eius fugit facilis illum totam deleniti amet, aliquid sint itaque sapiente, provident quos, assumenda officia quis atque maxime rerum?</summary>
+        </div>
+
+        <!-- Project 3 -->
+        <div id="project3" class="project-section">
+            <h3>Project 3 - Form</h3>
+            <h2>Personal Details</h2>
+<form>
+    <div class="form-group">
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" name="firstname" required>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="middlename">Middlename:</label>
+        <input type="text" id="middlename" name="middlename">
+    </div><br>
+
+    <div class="form-group">
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" required>
+    </div><br>
+
+    <div class="form-group">
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+    </div><br>
+
+    <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </div><br>
+
+    <div class="form-group">
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required>
+    </div><br>
+
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+91[0-9]{10}$" placeholder="+91" required>
+    </div><br>
+
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+    </div><br>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div><br>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div><br>
+
+    <div class="form-group">
+        <label for="retype-password">Re-type Password:</label>
+        <input type="password" id="retype-password" name="retype-password" required>
+    </div><br>
+
+    <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Agree to terms and conditions</label>
+    </div><br>
+
+    <div class="form-group">
+        <label for="file">Choose File:</label>
+        <input type="file" id="file" name="file">
+        
+    </div><br>
+
+    <div class="form-group">
+        <label for="color">Choose Color:</label>
+        <input type="color" id="color" name="color">
+    </div><br>
+
+    <div class="form-group">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </div><br>
+</form>
+
+</body>
+</html>
+
+        </div>
+
+        <!-- Project 4 -->
+        <div id="project4" class="project-section">
+            <h3>Project 4 - Additional Project</h3>
+            <h1>Virat kholi</h1>
+    <p>A spunky, chubby teenager with gelled hair shot to fame after leading India to glory in the Under-19 World Cup at Kuala Lumpur in early 2008. In an Indian team filled with saint-like icons worthy of their own hagiographies, Virat Kohli, with his most un-Indian, 'bad-boy' intensity, would clearly be an outcast.</p>
+    <h2>tweets</h2>
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Being this man’s trusted deputy was the most enjoyable and exciting period in my career. Our partnerships would always be special to me forever. 7+18 ❤️ <a href="https://t.co/PafGRkMH0Y">pic.twitter.com/PafGRkMH0Y</a></p>&mdash; Virat Kohli (@imVkohli) <a href="https://twitter.com/imVkohli/status/1562865781930528770?ref_src=twsrc%5Etfw">August 25, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <h2>image</h2>
+    <img src="https://images.app.goo.gl/1NkT4hLo63rT8C4o9" alt="">
+    <h2>instagram</h2>
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DAScU7cv81c/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DAScU7cv81c/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DAScU7cv81c/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Virat Kohli (@virat.kohli)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+<h2>google map</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.891073197129!2d77.59708157358916!3d12.97881821472295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1664d3619b53%3A0xc13769784709aec!2sM.Chinnaswamy%20Stadium!5e0!3m2!1sen!2sin!4v1730633325322!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<h2>favourite songs</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2SW0QDj1YAOvsjcGBMxn7J?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        </div>
+    </div>
+
+</body>
+</html>
